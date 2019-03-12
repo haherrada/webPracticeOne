@@ -115,3 +115,26 @@ body {
 .callout img {
     width: 50px;
 }
+
+/*grid of photos*/
+@media (min-width: 900px) {
+    .photo-grid-container {
+        display:flex;
+        height: 400px;
+        overflow: hidden;
+    }
+}
+.leftbox{
+    flex: auto;
+    margin: auto;
+    text-align: center;
+}
+.rightbox{
+    flex: auto;
+    margin: auto;
+}
+
+.rightbox img{
+ min-width: 100%;
+ min-height: 100%;
+}
