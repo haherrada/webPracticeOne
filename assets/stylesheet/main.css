@@ -22,14 +22,25 @@ body {
     font-size: 18px;
     text-decoration: none;
     flex: 1 0 auto;
+    color: black;
 }
 
 #logo a {
     outline: none;
     text-decoration: none;
+    color: black;
+}
+
+
+#logo a:active {
+    outline: none;
+    text-decoration: none;
+    color: black;
 }
 
 #logo a:visited {
+    outline: none;
+    text-decoration: none;
     color: black;
 }
 
@@ -117,24 +128,32 @@ body {
 }
 
 /*grid of photos*/
-@media (min-width: 900px) {
-    .photo-grid-container {
-        display:flex;
-        height: 400px;
-        overflow: hidden;
-    }
-}
-.leftbox{
-    flex: auto;
-    margin: auto;
-    text-align: center;
-}
-.rightbox{
-    flex: auto;
-    margin: auto;
+
+.grid-container {
+    height: 480px;
+    width: 100%;
 }
 
-.rightbox img{
- min-width: 100%;
- min-height: 100%;
+.text-box {
+    color: black;
+    font-size: 1rem;
+    line-height: 2em;
+    flex: 1 0 300px;
+    margin: auto 0px auto 0px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.photo-box {
+    background-image: url("https://media.idownloadblog.com/wp-content/uploads/2014/07/iPhone-5s-iSight-camera-closeup-002.jpg");
+    width: 100%;
+    object-fit: contain;
+    flex: 1 0 300px;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 900px) {
+    .grid-container {
+        display: flex;
+        justify-content: center;
+    }
 }
